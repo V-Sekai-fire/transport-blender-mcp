@@ -8,7 +8,9 @@ An agent connected through MCP creates, edits and inspects objects and materials
 
 ## Build and run
 
-Install the addon from `addons/` in Blender and enable it. The server is this package's `blender-mcp` command, registered with your MCP client; `docs/install.md` has the steps.
+Zip `addons/blender_mcp_addon`, install the zip in Blender as an extension, and enable it. The server is this package's `blender-mcp` command, registered with your MCP client; `docs/install.md` has the steps.
+
+Run one MCP server at a time, because two clients fight over the Blender socket. The `execute_blender_code` tool runs arbitrary Python inside Blender.
 
 ## Licence
 
